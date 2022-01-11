@@ -1,0 +1,10 @@
+
+Utilisation : 
+  - Pour lancer l'IHM, il suffit de lancer le fichier views.py avec la commande python3 views.py.
+  - L'IHM va alors être lancée. Les questions 1,2,3 sont déjà enregistrées, il suffit de sélectioner la question souhaitée et de cliquer sur "Calculer". 
+  - Le résultat apparait alors dans la console. Le résultat possède les tableaux de chaques itérations et les solutions finales. 
+
+Les différents fichiers : 
+  - Views.py -> script s'occupant de l'IHM
+  - simplex_BigM -> script s'occupant du calcul de Simplex
+  - style.css -> s'occupe du style de l'IHM
