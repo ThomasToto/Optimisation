@@ -1,10 +1,40 @@
+Rédéfinition du sujet : 
 
-Utilisation : 
+Question 1 : 
+On pose x1,x2 et x3 les quantités de chaquue produit.
+MIN(Z) = 11x1 + 16x2 + 15x3
+sc:
+  x1 + 2x2 + 3/2x3 <= 12000
+  2/3x1 + 2/3x2 + x3 <= 4600
+  1/2x1 +1/3x2 + 1/2x3 <= 2400
+
+Question 2 :
+On pose x1 et x2 le nombre de journées des usines 1 et 2.
+MIN(Z) Z= 20000x1 + 25000x2 
+MAX(Z) Z= -20000x1 -25000x2
+s.c:
+  400x1 + 300x2 => 25000
+  300x1 + 400x2 => 27000
+  200x1 + 500x2 => 30000
+  
+Question  3 :
+On pose x1 et x2 les quantités envoyées des entreprises 1 et 2 au client 1. Et x3 et x4 quantités de
+voitures vers client 2.
+MIN(Z) Z = 30x1 + 36x2 + 25x3 + 30x4
+s.c:
+  x1 + x2 = 200
+  x3 + x4 = 300
+  x1 + x3 <= 400
+  x2 + x4 <= 300
+
+
+Utilisation de l'IHM : 
   - Pour lancer l'IHM, il suffit de lancer le fichier views.py avec la commande python3 views.py.
   - L'IHM va alors être lancée. Les questions 1,2,3 sont déjà enregistrées, il suffit de sélectioner la question souhaitée et de cliquer sur "Calculer". 
   - Le résultat apparait alors dans la console. Le résultat possède les tableaux de chaques itérations et les solutions finales. 
 
-Les différents fichiers : 
+Les différents fichiers / Structure du programme : 
   - Views.py -> script s'occupant de l'IHM
   - simplex_BigM -> script s'occupant du calcul de Simplex
   - style.css -> s'occupe du style de l'IHM
+  
