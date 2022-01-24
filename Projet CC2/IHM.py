@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import (QLineEdit, QPushButton, QVBoxLayout, QHBoxLayout,
                              QWidget, QRadioButton, QLabel, QGridLayout,
                              QComboBox)
 
-import pas_fixe, pas_accéléré, bissectrice,newton_raphson
+import Question1_PasFixe, Question1_PasAccelere, Question1_Bissectrice, Question2_Newton_Raphson
 
 class Home(QWidget):
     
@@ -167,11 +167,11 @@ class Parameters(QWidget):
             ext = 'max'
         
         if self.method == 'fixe':
-            pas_fixe.pasFixe(x0,pas,ext)
+            Question1_PasFixe.pasFixe(x0,pas,ext)
         elif self.method == 'accel':
-            pas_accéléré.pas_accelere(x0,pas,ext)
+            Question1_PasAccelere.pas_accelere(x0,pas,ext)
         else:
-            bissectrice.bissection(L,ext,prec)
+            Question1_Bissectrice.bissection(L,ext,prec)
             
 class Q2(QWidget):
 
@@ -215,7 +215,7 @@ class Q2(QWidget):
     def affiche(self):
         x0 = float(self.depart.text())
         prec = float(self.prec.text())
-        newton_raphson.NewtonRaphson(x0,prec)
+        Question2_Newton_Raphson.NewtonRaphson(x0,prec)
         
         
         
